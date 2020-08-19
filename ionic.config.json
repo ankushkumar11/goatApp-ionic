@@ -1,0 +1,7 @@
+{
+  "name": "goatApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
