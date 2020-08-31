@@ -1,10 +1,11 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonSpinner } from '@ionic/react';
 import React, { useState } from 'react';
 // import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
-import { InputExamples } from '../components/AddGoat';
+import './ListGoats.css';
+import ViewGoat from '../components/ViewGoat';
+// import { InputExamples } from '../components/AddGoat';
 
-const Home: React.FC = () => {
+const ListGoats: React.FC = () => {
   // const [weightRecord, setWeightRecord] = useState([{weight: 0, date: ''}]);
   return (
     <IonPage>
@@ -19,10 +20,11 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <InputExamples />
+        <ViewGoat />
       </IonContent>
+      <IonSpinner name="bubbles" />
     </IonPage>
   );
 };
 
-export default Home;
+export default ListGoats;
